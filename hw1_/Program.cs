@@ -1,4 +1,12 @@
 ﻿
+using hw1_;
+using hw1_.hw3.hw3_3;
+using hw2;
+using hw2.hw2._2;
+using hw2.hw2._3;
+using hw2.hw3.hw3_1;
+using hw2.hw3.hw3_2;
+
 class ProgramCalculator
 {
     public int Add(int a, int b)
@@ -32,7 +40,7 @@ class ProgramCalculator
     {
         return Math.Sqrt(a);
     }
-    public static void Main()
+    public static void MainOld()
     {
         ProgramCalculator pc = new ProgramCalculator();
         string s = "any";
@@ -72,5 +80,44 @@ class ProgramCalculator
                     break;
             }
         }
+
+    }
+    public static void Main()
+    {
+
+        //test hw 2.1
+        /*        Money wallet = new Money(50.25);
+                wallet.SavedValue();
+                Money iceCreamPrice = new Money(15.50);
+                Product iceCream = new Product("Yammy-yammy", iceCreamPrice);
+                wallet.BuyProduct(iceCream);
+                wallet.SavedValue();*/
+
+        // test hw2.2
+        /*      Violin v = new Violin("My v", "Super violin sound");
+                v.Sound();
+                v.Show();
+                v.Desc();
+                v.History();*/
+        //test hw2.3
+        /*        DecimalNumber myDigit = new DecimalNumber(123);
+                myDigit.DecimalToBinary();
+                myDigit.DecimalToOctal();
+                myDigit.DecimalToHex();*/
+
+        //test hw 3.1 3.2 3.3
+        hw2.hw3.hw3_1.Array numbers = new hw2.hw3.hw3_1.Array(new int[5] { 2, 3, 4, 5, 7 });
+        numbers.Show();
+        numbers.Show("My numbers: ");
+
+        NextArray nextArray = new NextArray(new int[5] { 3, 6, 68, 41, 4 });
+        nextArray.Show("Numbers in nextArray: ");
+        Console.WriteLine($"Min: {nextArray.Min()}, max: {nextArray.Max()}, avg {nextArray.Avg()}");
+        Console.WriteLine($"41 -> {nextArray.Search(41)}, 5 -> {nextArray.Search(5)}");
+
+        SortNextArray sortedArray = new SortNextArray(new int[7] { 13, 62, 67, 41, 4, -100, 4 });
+        sortedArray.Show("Numbers before sort: ");
+        sortedArray.SortDesc();
+        sortedArray.Show("Numbers after sort desc: ");
     }
 }
