@@ -1,9 +1,12 @@
 ﻿
 using hw1_;
+using hw1_.hw._2._1._5_hw;
+using hw1_.hw._2._1._7_hw;
 using hw1_.hw3.hw3_3;
 using hw1_.hw4.hw4_2;
 using hw1_.hw4.hw4_3;
 using hw1_.hw4.hw4_4;
+using hw1_.hw5;
 using hw2;
 using hw2.hw2._2;
 using hw2.hw2._3;
@@ -126,57 +129,83 @@ class ProgramCalculator
 
         // test hw 4
 
-        Employee empOfTheWeek = new Employee(1, "Nora", 555479641, 1000.00f);
-        Employee empOfTheMonth = new Employee(1, "Nora", 555479641, 1000.00f);
+        /* Employee empOfTheWeek = new Employee(1, "Nora", 555479641, 1000.00f);
+         Employee empOfTheMonth = new Employee(1, "Nora", 555479641, 1000.00f);
 
-        float incrSalary = 75.50f;
+         float incrSalary = 75.50f;
 
-        empOfTheWeek += incrSalary;
+         empOfTheWeek += incrSalary;
 
-        Console.WriteLine($"New salary {empOfTheWeek.Salary}");
+         Console.WriteLine($"New salary {empOfTheWeek.Salary}");
 
-        Console.WriteLine($"Salary matching: {empOfTheWeek == empOfTheMonth}");
-        Console.WriteLine($"not matched 2 employers: {empOfTheWeek != empOfTheMonth}");
-        Console.WriteLine($"empOfTheWeek > empOfTheMonth: {empOfTheWeek > empOfTheMonth}" +
-            "\n---------after substact salary----------");
-        empOfTheWeek -= incrSalary;
-        Console.WriteLine($"not matched 2 employers: {empOfTheWeek != empOfTheMonth}");
-        Console.WriteLine($"empOfTheWeek > empOfTheMonth: {empOfTheWeek > empOfTheMonth}");
+         Console.WriteLine($"Salary matching: {empOfTheWeek == empOfTheMonth}");
+         Console.WriteLine($"not matched 2 employers: {empOfTheWeek != empOfTheMonth}");
+         Console.WriteLine($"empOfTheWeek > empOfTheMonth: {empOfTheWeek > empOfTheMonth}" +
+             "\n---------after substact salary----------");
+         empOfTheWeek -= incrSalary;
+         Console.WriteLine($"not matched 2 employers: {empOfTheWeek != empOfTheMonth}");
+         Console.WriteLine($"empOfTheWeek > empOfTheMonth: {empOfTheWeek > empOfTheMonth}");
 
-        Matrix nemo = new Matrix(new int[4] { 4, 6, 2, 41 }, "Nemo");
-        Matrix dory = new Matrix(new int[3] { 8, 20, 37 }, "Dory");
-        Console.WriteLine("-----------MATRIX TEST--------------");
-        Console.WriteLine($"{nemo} and {dory}");
-        Console.WriteLine(nemo + dory);
-        Console.WriteLine(nemo - dory);
-        Console.WriteLine(nemo * dory);
-        Console.WriteLine(nemo * 2);
-        Matrix doryClone = new Matrix(new int[3] { 8, 20, 37 }, "Dory");
+         Matrix nemo = new Matrix(new int[4] { 4, 6, 2, 41 }, "Nemo");
+         Matrix dory = new Matrix(new int[3] { 8, 20, 37 }, "Dory");
+         Console.WriteLine("-----------MATRIX TEST--------------");
+         Console.WriteLine($"{nemo} and {dory}");
+         Console.WriteLine(nemo + dory);
+         Console.WriteLine(nemo - dory);
+         Console.WriteLine(nemo * dory);
+         Console.WriteLine(nemo * 2);
+         Matrix doryClone = new Matrix(new int[3] { 8, 20, 37 }, "Dory");
 
-        Console.WriteLine($"Not matched test: {dory != doryClone}");
-        Console.WriteLine("-----------CREDITCARD TEST--------------");
-        CreditCard halaCard = new CreditCard(0, "Hala", 123);
-        halaCard.GetInfo();
-        CreditCard anotherHalaCard = new CreditCard(200.25f, "Hala", 123);
-        anotherHalaCard.GetInfo();
-        Console.WriteLine($"Matching cards: {!(halaCard != anotherHalaCard)}");
-        anotherHalaCard.Owner = "Lilya";
-        anotherHalaCard.GetInfo();
+         Console.WriteLine($"Not matched test: {dory != doryClone}");
+         Console.WriteLine("-----------CREDITCARD TEST--------------");
+         CreditCard halaCard = new CreditCard(0, "Hala", 123);
+         halaCard.GetInfo();
+         CreditCard anotherHalaCard = new CreditCard(200.25f, "Hala", 123);
+         anotherHalaCard.GetInfo();
+         Console.WriteLine($"Matching cards: {!(halaCard != anotherHalaCard)}");
+         anotherHalaCard.Owner = "Lilya";
+         anotherHalaCard.GetInfo();
 
-        Console.WriteLine($"Matching card after gifting: {!(halaCard != anotherHalaCard)}");
-        Console.WriteLine($"Matching cww on cards: {halaCard == anotherHalaCard}");
-        halaCard += 200.28f;
-        halaCard.GetInfo();
-        Console.WriteLine($"halaCard > anotherHalaCard, (matching money) {halaCard > anotherHalaCard}");
+         Console.WriteLine($"Matching card after gifting: {!(halaCard != anotherHalaCard)}");
+         Console.WriteLine($"Matching cww on cards: {halaCard == anotherHalaCard}");
+         halaCard += 200.28f;
+         halaCard.GetInfo();
+         Console.WriteLine($"halaCard > anotherHalaCard, (matching money) {halaCard > anotherHalaCard}");
 
-        City khariv = new City("Kharkiv", "east of UKraine", 1421125, true);
-        City dnipro = new City("Dnipro", "center of Ukraine", 984423, true);
+         City khariv = new City("Kharkiv", "east of UKraine", 1421125, true);
+         City dnipro = new City("Dnipro", "center of Ukraine", 984423, true);
 
-        Console.WriteLine(khariv + 587);
-        khariv.ShowInfo();
-      
+         Console.WriteLine(khariv + 587);
+         khariv.ShowInfo();*/
 
+        // test hw5
+        StagePlay test;
+       
+        for (int i = 0; i < 3; i++)
+        {
+          //  test = new StagePlay();
+        }
+        //GC.Collect();
+        //Console.Read();
 
+        Shop testShop = new Shop("Paradise", "Shevchenco, 37", "shoesShop");
+        testShop.ShowShop();
+        testShop.Dispose();
+        testShop = new Shop("Flowers of sun", "Karpatska, 53", "flowerShop");
+        testShop.ShowShop();
+
+        ModernShop modernShop = new("Mojito", "Fontanna, 1", "liquorStore");
+        for (int i = 1; i <= 10; i++)
+        {
+            modernShop = new($"Mojito(test{i})", "Fontanna, 1", "liquorStore");
+            if (i%2 == 0)
+            {
+                modernShop.Dispose();
+            }
+        }
+
+        GC.Collect();
+        Console.Read();
 
 
 
