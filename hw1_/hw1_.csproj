@@ -7,5 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="\hw2\" />
+	  <!-- >Folder Include="\hw.2.1" />
+    <Folder Include="\hw\2.2" />
+    <Folder Include="\hw\2.3" />
+    <Folder Include="\hw\3" />
+    <Folder Include="\hw\4" / -->
+  </ItemGroup>
+
 </Project>
 
