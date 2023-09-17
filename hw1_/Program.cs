@@ -7,6 +7,7 @@ using hw1_.hw4.hw4_2;
 using hw1_.hw4.hw4_3;
 using hw1_.hw4.hw4_4;
 using hw1_.hw5;
+using hw1_.hw7_threading;
 using hw2;
 using hw2.hw2._2;
 using hw2.hw2._3;
@@ -179,16 +180,16 @@ class ProgramCalculator
          khariv.ShowInfo();*/
 
         // test hw5
-        StagePlay test;
+        /*StagePlay test;
        
         for (int i = 0; i < 3; i++)
         {
           //  test = new StagePlay();
-        }
+        }*/
         //GC.Collect();
         //Console.Read();
 
-        Shop testShop = new Shop("Paradise", "Shevchenco, 37", "shoesShop");
+        /*Shop testShop = new Shop("Paradise", "Shevchenco, 37", "shoesShop");
         testShop.ShowShop();
         testShop.Dispose();
         testShop = new Shop("Flowers of sun", "Karpatska, 53", "flowerShop");
@@ -205,8 +206,9 @@ class ProgramCalculator
         }
 
         GC.Collect();
-        Console.Read();
-
+        Console.Read();*/
+        SleepingBarber sleepingBarber = new SleepingBarber();
+        sleepingBarber.Barber();
 
 
 
